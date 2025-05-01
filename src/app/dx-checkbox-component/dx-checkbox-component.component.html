@@ -1,0 +1,20 @@
+<!-- <dx-check-box (onValueChanged)="valueChanged($event)"></dx-check-box> -->
+
+<dx-data-grid
+  [dataSource]="organizationUsers"
+  [showBorders]="true"
+  [height]="200"
+  noDataText="No data available for the selected organization."
+  [selection]="{ mode: 'multiple', showCheckBoxesMode: 'always' }"
+  (onSelectionChanged)="valueChanged($event)"
+  
+>
+<!-- [disabled]="!isEditMode" -->
+
+
+  <!-- Username Column -->
+  <dxi-column dataField="username" caption="Username"></dxi-column>
+
+  <!-- Email Address Column -->
+  <dxi-column dataField="email" caption="Email Address"></dxi-column>
+</dx-data-grid>
