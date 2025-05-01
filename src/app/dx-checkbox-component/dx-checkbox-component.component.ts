@@ -25,6 +25,6 @@ export class DxCheckboxComponentComponent implements OnInit {
   }
 
   valueChanged(e: any) {
-    console.log(e.value)
+    console.log(e.currentSelectedRowKeys);
   }
 }
